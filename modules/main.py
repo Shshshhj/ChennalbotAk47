@@ -23,7 +23,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 bot = Client("bot",
-             bot_token= "7040230291:AAEjhvy8UP8ZZCHtc_ZY1dT-Cw-bHqH8EVY",
+             bot_token= "7040230291:AAHl1VuTeRgVRgiorYtPmq-8rZfuQjlA9-Y",
              api_id=20319884,
              api_hash= "637e3ba6357aa3ba2f3bf5742e0fd066")
 
@@ -31,7 +31,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /Ak47 Command to Downlaod From a Text file.\n")
+    editable = await m.reply_text("Hi!\n\nGive /txt Command to Downlaod From a Text file.\n")
 
 
 @bot.on_message(filters.command("Stop"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["Ak47"]))
+@bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
     input: Message = await bot.listen(editable.chat.id)
@@ -163,7 +163,7 @@ async def account_login(bot: Client, m: Message):
             try:  
                 
                 cc = f'**[ 🎬 ] Vid ID  :** {str(count).zfill(3)}\n**Title :** {name1} {res} Alex.mp4\n**Batch Name :** {raw_text0}\n**Extracted By ➤ ** {raw_text3}\n\n'
-                cc1 = f'**[ 📕 ] Pdf ID :** {str(count).zfill(3)}\n**Title :** {name1} Alex.pdf \n**Batch Name :** {raw_text0}\n**Extracted By ➤ ** {raw_text3}\n\n'
+                cc1 = f'**[ 📕 ] Pdf ID :** {str(count).zfill(3)}\n**Title :** {name1} Alex.pdf \n**Batch »** {raw_text0}\n**Extracted By ➤ ** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
