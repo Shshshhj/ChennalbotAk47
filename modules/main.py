@@ -162,7 +162,7 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[ 🎬 ] Vid ID  :** {str(count).zfill(3)}\n**Title :** {name1} {res} Alex.mkv\n**Batch Name :** {raw_text0}\n**Extracted By ➤ ** {raw_text3}\n\n'
+                cc = f'**[ 🎬 ] Vid ID  :** {str(count).zfill(3)}\n**Title :** {name1} {res} Alex.mp4\n**Batch Name :** {raw_text0}\n**Extracted By ➤ ** {raw_text3}\n\n'
                 cc1 = f'**[ 📕 ] Pdf ID :** {str(count).zfill(3)}\n**Title :** {name1} Alex.pdf \n**Batch Name :** {raw_text0}\n**Extracted By ➤ ** {raw_text3}\n\n'
                 if "drive" in url:
                     try:
