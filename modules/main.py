@@ -23,7 +23,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 bot = Client("bot",
-             bot_token= "6739187189:AAFiyBKdbKn8VeO3MMu64H12eK_XWRlZh3w",
+             bot_token= "7056328510:AAHU9Voafpszi-muOTdjs_42aYYQiPHWtUY",
              api_id=20319884,
              api_hash= "637e3ba6357aa3ba2f3bf5742e0fd066")
 
@@ -31,7 +31,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /Caption Command to Downlaod From a Text file.\n")
+    editable = await m.reply_text("Hi!\n\nGive /CaptionAlex Command to Downlaod From a Text file.\n")
 
 
 @bot.on_message(filters.command("Stop"))
@@ -41,7 +41,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["Caption"]))
+@bot.on_message(filters.command(["CaptionAlex"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
     input: Message = await bot.listen(editable.chat.id)
